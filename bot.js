@@ -36,12 +36,12 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/document/d/1hSuEG7oplnx4IX6HGsMOjsWb9TCqC4-F1NLjuBz5PCM/edit");
+    postMessage("https://tinyurl.com/springdhours");
     this.res.end();
   } 
   else if(request.text && botRegexGTA.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("tinyurl.com/dchecks");
+    postMessage("https://tinyurl.com/dchecks");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
