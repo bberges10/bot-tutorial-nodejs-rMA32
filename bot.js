@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/schedule/
-      botRegexAd=/^\/work/;botRegexGTA = /^\/classchecks/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
+      botRegexAd=/^\/work/;botRegexGTA = /^\/classchecks/; botRegexSC = /^\/google/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/help/;
       botRegexSiege = /^\/siege/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
@@ -46,7 +46,7 @@ function respond() {
   } 
   else if(request.text && botRegexSC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/ma32/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://bfy.tw/NF");
     this.res.end();
   }
   else if(request.text && botRegexP.test(request.text)) {
@@ -89,7 +89,7 @@ function respond() {
   }
   else if(request.text && botRegexCC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("current commands: /work /rtfm /schedule /classchecks /salt /cool guy /shrug");
+    postMessage("current commands: /work /google /rtfm /schedule /classchecks /salt /cool guy /shrug");
     this.res.end();
   }
   else if(request.text && botRegexSiege.test(request.text)) {
