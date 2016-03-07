@@ -64,7 +64,7 @@ function respond() {
   } 
   else if(request.text && botRegexSb.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://helpdesk.bus.miami.edu");
+    postMessage("helpdesk.bus.miami.edu");
     this.res.end();
   } 
   else if(request.text && botRegexSh.test(request.text)) {
