@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/schedule/
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i;botRegexSalt = /^\/directory/;botRegexRules = /^\/schedule/
       botRegexAd=/^\/work/;botRegexGTA = /^\/classchecks/; botRegexSC = /^\/google/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/tickets/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/help/;
       botRegexSiege = /^\/siege/;
@@ -26,7 +26,27 @@ function respond() {
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.imgur.com/B5BSVqH.png");
+    postMessage("Sebastian	8-9853		Megan	561-797-4328
+Steve	8-5449		Jhasir	305-799-1244
+Erick	8-2416		Samuel	786-879-0729
+Elliot	8-3606		John	904-589-7823
+David	8-3624		Bernardo	305-510-3507
+Marilyn	8-5937		Amanda	513-479-3084
+UM Operator	8-2211		Fabiana	954-864-4439
+Facilities	8-8282			
+Raiser's Edge	8-1349			
+May Peralta	8-5938			
+Kevin	8-1985			
+Jarvis	8-6454		SUPERVISOR NUMBERS	
+Events - Maria Otero	8-2362			
+			Alex	786-747-5704
+Blackboard	8-3949		Sebastian	305-989-9286
+Physical Plant	8-4091		Steve	305-606-2971
+Central IT	8-6565		Eliot	786-303-3463
+Student IT 	8-8887		Erick	786-405-5782
+Memorial/LC	8-3263			
+Senior Tech Cubicle	8-1289			
+");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
@@ -89,7 +109,7 @@ function respond() {
   }
   else if(request.text && botRegexCC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("current commands: /work /google /rtfm /schedule /classchecks /salt /cool guy /shrug");
+    postMessage("current commands: /work /google /rtfm /schedule /classchecks /directory /cool guy /shrug");
     this.res.end();
   }
   else if(request.text && botRegexSiege.test(request.text)) {
