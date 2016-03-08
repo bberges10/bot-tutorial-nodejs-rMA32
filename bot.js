@@ -49,14 +49,6 @@ Physical Plant	8-4091
 Student IT 	8-8887	
 Memorial/LC	8-3263	
 Central IT	8-6565	
-Senior Tech Cubicle  8-1289
-Megan	561-797-4328
-Jhasir	305-799-1244
-Samuel	786-879-0729
-John	904-589-7823
-Bernardo  305-510-3507
-Amanda 513-479-3084
-Fabiana	  954-864-4439
 ");
     this.res.end();
   } 
