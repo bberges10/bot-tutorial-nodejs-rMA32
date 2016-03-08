@@ -44,11 +44,6 @@ Sebastian  305-989-9286
 Steve	305-606-2971
 Eliot	786-303-3463
 Erick	786-405-5782
-Blackboard	8-3949	
-Physical Plant	8-4091	
-Student IT 	8-8887	
-Memorial/LC	8-3263	
-Central IT	8-6565	
 ");
     this.res.end();
   } 
