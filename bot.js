@@ -26,26 +26,37 @@ function respond() {
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Sebastian    8-9853	Megan	561-797-4328
-Steve	8-5449		Jhasir	305-799-1244
-Erick	8-2416		Samuel	786-879-0729
-Elliot	8-3606		John	904-589-7823
-David	8-3624		Bernardo  305-510-3507
-Marilyn	8-5937		Amanda 513-479-3084
-UM Operator	8-2211	Fabiana	  954-864-4439
-Facilities	8-8282			
-Raiser's Edge	8-1349			
-May Peralta	8-5938			
-Kevin	8-1985			
-Jarvis	8-6454		Events - Maria Otero	8-2362	
-			SUPERVISOR NUMBERS
-				Alex	786-747-5704
-Blackboard	8-3949		Sebastian  305-989-9286
-Physical Plant	8-4091		Steve	305-606-2971
-Central IT	8-6565		Eliot	786-303-3463
-Student IT 	8-8887		Erick	786-405-5782
-Memorial/LC	8-3263			
-Senior Tech Cubicle	8-1289		
+    postMessage("Sebastian    8-9853	
+Steve	8-5449		
+Erick	8-2416		
+Elliot	8-3606		
+David	8-3624		
+Marilyn	8-5937		
+UM Operator	8-2211	
+Facilities	8-8282	
+Raiser's Edge	8-1349	
+May Peralta	8-5938	
+Kevin	8-1985		
+Jarvis	8-6454
+Events - Maria Otero	8-2362	
+Alex	786-747-5704
+Sebastian  305-989-9286
+Steve	305-606-2971
+Eliot	786-303-3463
+Erick	786-405-5782
+Blackboard	8-3949	
+Physical Plant	8-4091	
+Student IT 	8-8887	
+Memorial/LC	8-3263	
+Central IT	8-6565	
+Senior Tech Cubicle  8-1289
+Megan	561-797-4328
+Jhasir	305-799-1244
+Samuel	786-879-0729
+John	904-589-7823
+Bernardo  305-510-3507
+Amanda 513-479-3084
+Fabiana	  954-864-4439
 ");
     this.res.end();
   } 
