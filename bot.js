@@ -30,14 +30,10 @@ function respond() {
 Steve	8-5449		
 Erick	8-2416		
 Elliot	8-3606		
-David	8-3624		
-Marilyn	8-5937		
 UM Operator	8-2211	
 Facilities	8-8282	
 Raiser's Edge	8-1349	
 May Peralta	8-5938	
-Kevin	8-1985		
-Jarvis	8-6454
 Events - Maria Otero	8-2362	
 Alex	786-747-5704
 Sebastian  305-989-9286
