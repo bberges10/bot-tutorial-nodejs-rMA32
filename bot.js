@@ -26,15 +26,23 @@ function respond() {
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage(" Sebastian    8-9853	
-Steve	8-5449		
-Erick	8-2416		
-Elliot	8-3606		
-Alex	786-747-5704
-Sebastian  305-989-9286
-Steve	305-606-2971
-Eliot	786-303-3463
-Erick	786-405-5782
+    postMessage("
+    Sebastian    8-9853	
+    Steve	8-5449
+    Erick	8-2416
+    Eliot	8-3606
+    Facilities	8-8282
+		UM Operator	8-2211
+		Raiser's Edge	8-1349	
+		May Peralta	8-5938	
+		Student IT 	8-8887	
+		Blackboard	8-3949
+		Events - Maria Otero	8-2362	
+		Alex	786-747-5704
+		Sebastian  305-989-9286
+		Steve	305-606-2971
+		Eliot	786-303-3463
+		Erick	786-405-5782
 ");
     this.res.end();
   } 
